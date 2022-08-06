@@ -1,0 +1,509 @@
+{
+  // Basic
+  "RageUI": {
+    "prefix": "RageUI",
+    "body": [
+      "RageUI"
+    ],
+    "description" : "Basic array"
+  },
+
+
+  // Audio
+  "Audio.PlaySound": {
+    "prefix": "Audio.PlaySound",
+    "body": [
+      "Audio.PlaySound(${1:Library}, ${2:Sound}, ${3:IsLooped})"
+    ],
+    "description" : "Play a sound"
+  },
+
+
+  // Graphics
+  "Graphics.MeasureStringWidth": {
+    "prefix": "Graphics.MeasureStringWidth",
+    "body": [
+      "Graphics.MeasureStringWidth(${1:str}, ${2:font}, ${3:scale})"
+    ],
+    "description" : "Description Not Done"
+  },
+
+  "Graphics.Rectangle": {
+    "prefix": "Graphics.Rectangle",
+    "body": [
+      "Graphics.Rectangle(${1:x}, ${2:y}, ${3:w}, ${4:h}, ${5:r}, ${6:g}, ${7:b}, ${8:a})"
+    ],
+    "description" : "Draw a rectangle"
+  },
+
+  "Graphics.Sprite": {
+    "prefix": "Graphics.Sprite",
+    "body": [
+      "Graphics.Sprite(${1:dictionary}, ${2:name}, ${3:x}, ${4:y}, ${5:width}, ${6:height}, ${7:heading}, ${8:r}, ${9:g}, ${10:b}, ${11:a})"
+    ],
+    "description" : "Description Not Done"
+  },
+
+  "Graphics.GetLineCount": {
+    "prefix": "Graphics.GetLineCount",
+    "body": [
+      "Graphics.GetLineCount(${1:text}, ${2:x}, ${3:y}, ${4:font}, ${5:scale}, ${6:r}, ${7:g}, ${8:b}, ${9:a}, ${10:alignment}, ${11:dropShadow}, ${12:outline}, ${13:wordWrap})"
+    ],
+    "description" : "Description Not Done"
+  },
+
+  "Graphics.Text": {
+    "prefix": "Graphics.Text",
+    "body": [
+      "Graphics.Text(${1:text}, ${2:x}, ${3:y}, ${4:font}, ${5:scale}, ${6:r}, ${7:g}, ${8:b}, ${9:a}, ${10:alignment}, ${11:dropShadow}, ${12:outline}, ${13:wordWrap}))"
+    ],
+    "description" : "Description Not Done"
+  },
+
+  "Graphics.IsMouseInBounds": {
+    "prefix": "Graphics.IsMouseInBounds",
+    "body": [
+      "Graphics.IsMouseInBounds(${1:x}, ${2:y}, ${3:width}, ${4:height})"
+    ],
+    "description" : "Description Not Done"
+  },
+
+  "Graphics.ConvertToPixel": {
+    "prefix": "Graphics.ConvertToPixel",
+    "body": [
+      "Graphics.ConvertToPixel(${1:x}, ${2:y})"
+    ],
+    "description" : "Description Not Done"
+  },
+
+  "Graphics.ScreenToWorld": {
+    "prefix": "Graphics.ScreenToWorld",
+    "body": [
+      "Graphics.ScreenToWorld(${1:distance}, ${2:flags})"
+    ],
+    "description" : "Description Not Done"
+  },
+
+  "Graphics.ScreenRelToWorld": {
+    "prefix": "Graphics.ScreenRelToWorld",
+    "body": [
+      "Graphics.ScreenRelToWorld(${1:camPos}, ${2:camRot}, ${3:cursor})"
+    ],
+    "description" : "Description Not Done"
+  },
+
+  "Graphics.RotationToDirection": {
+    "prefix": "Graphics.RotationToDirection",
+    "body": [
+      "Graphics.RotationToDirection(${1:rotation})"
+    ],
+    "description" : "Description Not Done"
+  },
+
+  "Graphics.World3DToScreen2D": {
+    "prefix": "Graphics.World3DToScreen2D",
+    "body": [
+      "Graphics.World3DToScreen2D(${1:pos})"
+    ],
+    "description" : "Description Not Done"
+  },
+
+
+  // Keys
+  "Keys.Register": {
+    "prefix": "Keys.Register",
+    "body": [
+      "Keys.Register(${1:Controls}, ${2:ControlName}, ${3:Description}, ${4:function()}",
+      "\t$0",
+      "end)"
+    ],
+    "description" : "Allow "
+  },
+
+
+  // Util
+  "math.round": {
+    "prefix": "math.round",
+    "body": [
+      "math.round(${1:num}, ${2:numDecimalPlaces})"
+    ],
+    "description" : "Description Not Done"
+  },
+
+  "string.starts": {
+    "prefix": "string.starts",
+    "body": [
+      "string.starts(${1:str}, ${2:start})"
+    ],
+    "description" : "Description Not Done"
+  },
+
+  // Visual
+  "Visual.Notification": {
+    "prefix": "Visual.Notification",
+    "body": [
+      "Visual.Notification(${1:args})"
+    ],
+    "description" : "Description Not Done"
+  },
+
+  "Visual.Subtitle": {
+    "prefix": "Visual.Subtitle",
+    "body": [
+      "Visual.Subtitle(${1:text}, ${2:time})"
+    ],
+    "description" : "Description Not Done"
+  },
+
+  "Visual.FloatingHelpText": {
+    "prefix": "Visual.FloatingHelpText",
+    "body": [
+      "Visual.FloatingHelpText(${1:text}, ${1:sound}, ${1:loop})"
+    ],
+    "description" : "Description Not Done"
+  },
+
+  "Visual.Prompt": {
+    "prefix": "Visual.Prompt",
+    "body": [
+      "Visual.Prompt(${1:text}, ${2:spinner})"
+    ],
+    "description" : "Description Not Done"
+  },
+
+  "Visual.PromptDuration": {
+    "prefix": "Visual.PromptDuration",
+    "body": [
+      "Visual.PromptDuration(${1:duration}, ${2:text}, ${3:spinner})"
+    ],
+    "description" : "Description Not Done"
+  },
+
+  "Visual.FloatingHelpTextToEntity": {
+    "prefix": "Visual.FloatingHelpTextToEntity",
+    "body": [
+      "Visual.FloatingHelpTextToEntity(${1:text}, ${2:x}, ${3:y})"
+    ],
+    "description" : "Description Not Done"
+  },
+
+  // Items
+  "Items:AddButton": {
+    "prefix": "Items:AddButton",
+    "body": [
+      "Items:AddButton(${1:label}, ${2:description}, ${3:style}, ${4:function(onSelected)}",
+      "\t$0",
+      "end, ${5:subMenu})"
+    ],
+    "description" : "Add a button in your Menu"
+  },
+
+  "Items:CheckBox": {
+    "prefix": "Items:CheckBox",
+    "body": [
+      "Items:CheckBox(${1:label}, ${2:description}, ${3:checked}, ${4:style}, ${5:function(onSelected, IsChecked)}",
+      "\t$0",
+      "end)",
+    ],
+    "description" : "Add a Checkbox in your Menu"
+  },
+
+  "Items:AddSeparator": {
+    "prefix": "Items:AddSeparator",
+    "body": [
+      "Items:AddSeparator(${1:label})"
+    ],
+    "description" : "Add a Separator in your Menu"
+  },
+
+  "Items:AddList": {
+    "prefix": "Items:AddList",
+    "body": [
+      "Items:AddList(${1:label}, ${2:items}, ${3:index}, ${4:description}, ${5:style}, ${6:function(Index, onSelected, onListChange)}",
+      "\t$0",
+      "end, ${7:subMenu})"
+    ],
+    "description" : "Description Not Done"
+  },
+
+  "Items:Heritage": {
+    "prefix": "Items:Heritage",
+    "body": [
+      "Items:Heritage(${1:mum}, ${2:dad})"
+    ],
+    "description" : "Draw the heritage panel of GTA5"
+  },
+
+
+  // Panels
+  "Panels:Grid": {
+    "prefix": "Panels:Grid",
+    "body": [
+      "Panels:Grid(${1:startedX}, ${2:startedY}, ${3:topText}, ${4:bottomText}, ${5:leftText}, ${6:rightText}, ${7:function(x, y, characterX, characterY)}",
+      "\t$0",
+      "end, ${8:index})",
+    ],
+    "description" : "Description Not Done"
+  },
+
+  "Panels:GridHorizontal": {
+    "prefix": "Panels:GridHorizontal",
+    "body": [
+      "Panels:GridHorizontal(${1:startedX}, ${2:leftText}, ${3:rightText}, ${4:function()}",
+      "\t$0",
+      "end, ${5:index})",
+    ],
+    "description" : "Description Not Done"
+  },
+
+  "Panels:GridVertical": {
+    "prefix": "Panels:GridVertical",
+    "body": [
+      "Panels:GridVertical(${1:startedY}, ${2:topText}, ${3:bottomText}, ${4:function()}",
+      "\t$0",
+      "end, ${5:index})",
+    ],
+    "description" : "Description Not Done"
+  },
+  
+
+  // Menu
+  "RageUI.CreateMenu": {
+    "prefix": "RageUI.CreateMenu",
+    "body": [
+      "RageUI.CreateMenu(${1:title}, ${2:subTitle}, ${3:x}, ${4:y}, ${5:textureDictionary}, ${6:textureName}, ${7:r}, ${8:g}, ${9:b}, ${10:a})"
+    ],
+    "description" : "Create the main Menu"
+  },
+
+  "RageUI.CreateSubMenu": {
+    "prefix": "RageUI.CreateSubMenu",
+    "body": [
+      "RageUI.CreateSubMenu(${1:parent}, ${2:title}, ${3:subTitle}, ${4:x}, ${5:y}, ${6:textureDictionary}, ${7:textureName}, ${8:r}, ${9:g}, ${10:b}, ${11:a})"
+    ],
+    "description" : "Create a Submenu"
+  },
+
+  "RageUIMenus:SetSubtitle": {
+    "prefix": "RageUIMenus:SetSubtitle",
+    "body": [
+      "RageUIMenus:SetSubtitle(${1:subTitle})"
+    ],
+    "description" : "Description Not Done"
+  },
+
+  "RageUIMenus:AddInstructionButton": {
+    "prefix": "RageUIMenus:AddInstructionButton",
+    "body": [
+      "RageUIMenus:AddInstructionButton(${1:button})"
+    ],
+    "description" : "Description Not Done"
+  },
+
+  "RageUIMenus:RemoveInstructionButton": {
+    "prefix": "RageUIMenus:RemoveInstructionButton",
+    "body": [
+      "RageUIMenus:RemoveInstructionButton(${1:button})"
+    ],
+    "description" : "Description Not Done"
+  },
+
+  "RageUIMenus:UpdateInstructionalButtons": {
+    "prefix": "RageUIMenus:UpdateInstructionalButtons",
+    "body": [
+      "RageUIMenus:UpdateInstructionalButtons(${1:visible})"
+    ],
+    "description" : "Description Not Done"
+  },
+
+  "RageUIMenus:IsVisible": {
+    "prefix": "RageUIMenus:IsVisible",
+    "body": [
+      "RageUIMenus:IsVisible(${1:function(Items)}",
+      "\t$0",
+      "end)"
+    ],
+    "description" : "If this menu is visible do your code"
+  },
+
+  "RageUIMenus:KeysRegister": {
+    "prefix": "RageUIMenus:KeysRegister",
+    "body": [
+      "RageUIMenus:KeysRegister(${1:Controls}, ${2:ControlName}, ${3:Description}, ${4:function()}",
+      "\t$0",
+      "end)"
+    ],
+    "description" : "Description Not Done"
+  },
+
+
+  // Menu Controller
+  "RageUI.GoUp": {
+    "prefix": "RageUI.GoUp",
+    "body": [
+      "RageUI.GoUp(${1:Options})"
+    ],
+    "description" : "Description Not Done"
+  },
+
+  "RageUI.GoDown": {
+    "prefix": "RageUI.GoDown",
+    "body": [
+      "RageUI.GoDown(${1:Options})"
+    ],
+    "description" : "Description Not Done"
+  },
+
+  "RageUI.GoActionControl": {
+    "prefix": "RageUI.GoActionControl",
+    "body": [
+      "RageUI.GoActionControl(${1:Controls}, ${2:function()}",
+      "\t$0",
+      "end)"
+    ],
+    "description" : "Description Not Done"
+  },
+
+  "RageUI.GoActionControlSlider": {
+    "prefix": "RageUI.GoActionControlSlider",
+    "body": [
+      "RageUI.GoActionControlSlider(${1:Controls}, ${2:function()}",
+      "\t$0",
+      "end)"
+    ],
+    "description" : "Description Not Done"
+  },
+
+  "RageUI.Controls": {
+    "prefix": "RageUI.Controls",
+    "body": [
+      "RageUI.Controls()"
+    ],
+    "description" : "Description Not Done"
+  },
+
+  "RageUI.Navigation": {
+    "prefix": "RageUI.Navigation",
+    "body": [
+      "RageUI.Navigation()"
+    ],
+    "description" : "Description Not Done"
+  },
+
+  "RageUI.GoBack": {
+    "prefix": "RageUI.GoBack",
+    "body": [
+      "RageUI.GoBack()"
+    ],
+    "description" : "Description Not Done"
+  },
+
+
+  // RageUI
+  "RageUI.PoolMenus": {
+    "prefix": "RageUI.PoolMenus",
+    "body": [
+      "RageUI.PoolMenus:Example()",
+      "\t$0",
+      "end"
+    ],
+    "description" : "Description Not Done"
+  },
+
+  "RageUI.GetSafeZoneBounds": {
+    "prefix": "RageUI.GetSafeZoneBounds",
+    "body": [
+      "RageUI.GetSafeZoneBounds()"
+    ],
+    "description" : "Description Not Done"
+  },
+
+  "RageUI.Visible": {
+    "prefix": "RageUI.Visible",
+    "body": [
+      "RageUI.Visible(${1:Menu}, ${2:Value})"
+    ],
+    "description" : "Set the Menu visible or not"
+  },
+
+  "RageUI.CloseAll": {
+    "prefix": "RageUI.CloseAll",
+    "body": [
+      "RageUI.CloseAll()"
+    ],
+    "description" : "Description Not Done"
+  },
+
+  "RageUI.Banner": {
+    "prefix": "RageUI.Banner",
+    "body": [
+      "RageUI.Banner()"
+    ],
+    "description" : "Description Not Done"
+  },
+
+  "RageUI.Subtitle": {
+    "prefix": "RageUI.Subtitle",
+    "body": [
+      "RageUI.Subtitle()"
+    ],
+    "description" : "Description Not Done"
+  },
+
+  "RageUI.Background": {
+    "prefix": "RageUI.Background",
+    "body": [
+      "RageUI.Background()"
+    ],
+    "description" : "Description Not Done"
+  },
+
+  "RageUI.Description": {
+    "prefix": "RageUI.Description",
+    "body": [
+      "RageUI.Description()"
+    ],
+    "description" : "Description Not Done"
+  },
+
+  "RageUI.Render": {
+    "prefix": "RageUI.Render",
+    "body": [
+      "RageUI.Render()"
+    ],
+    "description" : "Description Not Done"
+  },
+
+  "RageUI.ItemsDescription": {
+    "prefix": "RageUI.ItemsDescription",
+    "body": [
+      "RageUI.ItemsDescription(${1:Description})"
+    ],
+    "description" : "Description Not Done"
+  },
+
+  "RageUI.ItemsMouseBounds": {
+    "prefix": "RageUI.ItemsMouseBounds",
+    "body": [
+      "RageUI.ItemsMouseBounds(${1:CurrentMenu}, ${2:Selected}, ${3:Option}, ${4:SettingsButton})"
+    ],
+    "description" : "Description Not Done"
+  },
+
+  "RageUI.ItemsSafeZone": {
+    "prefix": "RageUI.ItemsSafeZone",
+    "body": [
+      "RageUI.ItemsSafeZone(${1:CurrentMenu})"
+    ],
+    "description" : "Description Not Done"
+  },
+
+  "RageUI.Pool": {
+    "prefix": "RageUI.Pool",
+    "body": [
+      "RageUI.Pool()"
+    ],
+    "description" : "Description Not Done"
+  },
+
+}

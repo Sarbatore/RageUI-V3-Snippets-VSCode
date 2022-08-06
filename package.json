@@ -1,0 +1,21 @@
+{
+  "name": "rageuiv3-snippets",
+  "displayName": "RageUI V3 Code Snippets",
+  "description": "An extension which helps you with RageUI Lib V3",
+  "version": "0.0.1",
+  "publisher": "Sarbatore",
+  "engines": {
+    "vscode": "^1.70.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "lua",
+        "path": "./snippets/snippets.code-snippets"
+      }
+    ]
+  }
+}
