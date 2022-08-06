@@ -11,3 +11,7 @@ Let me know
 ## Release Notes ##
 
 Soon
+
+## Installation ##
+
+Link : https://marketplace.visualstudio.com/items?itemName=Sarbatore.rageuiv3-snippets
