@@ -9,6 +9,40 @@
   },
 
 
+  // Helpers
+  "RageUISkeleton": {
+    "prefix": "RageUISkeleton",
+    "body": [
+      "local MainMenu = RageUI.CreateMenu(\"Title\", \"Subtitle\")",
+      "local SubMenu = RageUI.CreateSubMenu(Parent, \"Title\", \"Subtitle\")",
+      "\t$0",
+      "function RageUI.PoolMenus:Example()",
+      "  MainMenu:IsVisible(function(Items)",
+      "    Items:AddSeparator(\"Label\")",
+      "    Items:AddButton(\"Label\", nil, { IsDisabled = false }, function(onSelected)",
+      "      -- YOUR CODE",
+      "    end, SubMenu)",
+      "\t$0",
+      "  end, function(Panels)",
+      "    -- YOUR CODE",
+      "  end)",
+      "\t$0",
+      "  SubMenu:IsVisible(function(Items)",
+      "    -- What draw on sub menu ?",
+      "  end, function(Panels)",
+      "    -- YOUR CODE",
+      "  end)",
+      "\t$0",
+      "end",
+      "\t$0",
+      "Keys.Register(\"E\", \"E\", \"Test\", function()",
+      "  RageUI.Visible(MainMenu, not RageUI.Visible(MainMenu))",
+      "end)"
+    ],
+    "description" : "Skeleton template of a menu"
+  },
+
+
   // Audio
   "Audio.PlaySound": {
     "prefix": "Audio.PlaySound",
